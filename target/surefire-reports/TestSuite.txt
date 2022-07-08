@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 1.191 s <<< FAILURE! - in TestSuite
+BrowserSetUp(Academy.FooterLinksTest)  Time elapsed: 0.987 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/remote/SessionNotFoundException
+	at Academy.FooterLinksTest.BrowserSetUp(FooterLinksTest.java:17)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.SessionNotFoundException
+	at Academy.FooterLinksTest.BrowserSetUp(FooterLinksTest.java:17)
+

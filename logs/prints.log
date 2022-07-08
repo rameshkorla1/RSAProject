@@ -1,0 +1,7 @@
+19:44:21.648 [main] INFO  resources.base - Navigation Bar is displayed
+20:05:06.338 [main] INFO  resources.base - Launching the browser
+20:05:23.821 [main] INFO  resources.base - Navigated to Home page
+20:05:23.835 [main] INFO  Academy.TestListener - *** Test Suite validateAppTitle ending ***
+20:05:23.839 [main] INFO  Academy.TestListener - *** Test Suite validateAppTitle ending ***
+20:05:43.432 [main] INFO  Academy.TestListener - *** Test Suite validateAppNavBar ending ***
+20:05:43.502 [main] INFO  resources.base - Navigation Bar is displayed

@@ -1,0 +1,7 @@
+11:30:34.173 [main] INFO  resources.base - Navigated to Home page
+11:30:34.231 [main] INFO  Academy.TestListener - *** Test Suite validateAppTitle ending ***
+15:33:09.748 [main] INFO  resources.base - Launching the browser
+15:33:35.745 [main] INFO  resources.base - Navigated to Home page
+15:33:35.789 [main] INFO  Academy.TestListener - *** Test Suite validateAppTitle ending ***
+15:33:35.791 [main] INFO  Academy.TestListener - *** Test Suite validateAppTitle ending ***
+15:34:00.788 [main] INFO  Academy.TestListener - *** Test Suite validateAppNavBar ending ***

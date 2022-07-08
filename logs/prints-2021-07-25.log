@@ -1,0 +1,8 @@
+11:15:38.691 [main] INFO  resources.base - Driver is initialized
+11:15:47.301 [main] INFO  resources.base - Navigated to Home page
+11:15:47.317 [main] INFO  Academy.TestListener - *** Test Suite validateAppTitle ending ***
+11:21:27.480 [main] INFO  resources.base - Driver is initialized
+11:21:54.027 [main] INFO  resources.base - Navigated to Home page
+11:26:25.726 [main] INFO  resources.base - Driver is initialized
+11:26:40.534 [main] INFO  resources.base - Navigated to Home page
+11:30:28.938 [main] INFO  resources.base - Driver is initialized

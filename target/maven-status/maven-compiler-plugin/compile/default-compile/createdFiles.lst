@@ -1,0 +1,8 @@
+resources\base.class
+pageObjects\FooterLinks.class
+resources\DriverManager.class
+resources\ExtentReporterNG.class
+pageObjects\LandingPage.class
+pageObjects\LoginPage.class
+pageObjects\ForgotPassword.class
+Academy\App.class
