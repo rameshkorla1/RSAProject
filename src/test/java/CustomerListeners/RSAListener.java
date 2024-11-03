@@ -11,7 +11,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
-import ExtentReports.ExtentTestManager;
+import reportmanager.ExtentTestManager;
 import resources.base;
 
 
@@ -41,7 +41,7 @@ public class RSAListener extends base implements ITestListener {
         ExtentTestManager.getTest().log(Status.PASS, result.getName() + " Test is Passed");
         try {
             ExtentTestManager.getTest().pass("<br><font color= green>"+"Screenshot of Web"+"</font></b>",
-                    MediaEntityBuilder.createScreenCaptureFromBase64String(takefull_Screenshot(getSimpleClassName(result))).build());
+                    MediaEntityBuilder.createScreenCaptureFromBase64String(takefullScreenshot(getSimpleClassName(result))).build());
         } catch (IOException e) {
             e.printStackTrace();
         } catch (Exception e) {
@@ -60,7 +60,7 @@ public class RSAListener extends base implements ITestListener {
         ExtentTestManager.getTest().log(Status.FAIL, result.getName() + " Test is failed" +result.getThrowable());
         try {
             ExtentTestManager.getTest().fail("<br><font color= red>"+"Screenshot of Web"+"</font></b>",
-                    MediaEntityBuilder.createScreenCaptureFromBase64String(takefull_Screenshot(getSimpleMethodName(result))).build());
+                    MediaEntityBuilder.createScreenCaptureFromBase64String(takefullScreenshot(getSimpleMethodName(result))).build());
         } catch (IOException e) {
             e.printStackTrace();
         } catch (Exception e) {

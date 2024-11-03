@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="Academy.TestListener"/>
+<listener class-name="CustomerListeners.RSAListener"/>
 </listeners>
   <test thread-count="5" name="validateTest">
     <classes>
-      <class name="Academy.validateTitleTest"/>
+      <class name="academy.validateTitleTest"/>
     </classes>
   </test> <!-- Test -->
   <test thread-count="5" name="validaeNavigationTest">
     <classes>
-      <class name="Academy.validateNavigationBar"/>
+      <class name="academy.validateNavigationBar"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

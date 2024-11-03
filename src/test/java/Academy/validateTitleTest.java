@@ -1,4 +1,4 @@
-package Academy;
+package academy;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import pageObjects.LandingPage;
 import resources.base;
 
-@Listeners(Academy.TestListener.class)
+@Listeners(academy.TestListener.class)
 public class validateTitleTest extends base{
 	
 	public WebDriver driver;

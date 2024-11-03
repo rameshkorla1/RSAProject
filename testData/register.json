@@ -1,0 +1,15 @@
+{
+  "register":
+  [
+    {
+       "FullName":"Ramesh K",
+       "Email":"ramesh.korla@outlook.com",
+       "Password":"pass123"   
+    },
+    {
+       "FullName":"QAUser1",
+       "Email":"ramesh.korla@rediff.com",
+       "Password":"pass1234"   
+    } 
+  ]
+}

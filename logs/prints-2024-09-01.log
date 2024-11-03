@@ -1,0 +1,6 @@
+14:30:45.782 [main] INFO  academy.TestListener - *** Test Suite validateAppNavBar ending ***
+14:32:07.791 [main] INFO  academy.TestListener - *** Test Suite footerLinksvalidation ending ***
+14:32:07.815 [main] INFO  academy.TestListener - *** Test Suite validateUserRegister ending ***
+14:32:07.825 [main] INFO  academy.TestListener - *** Test Suite validateAppTitle ending ***
+14:32:07.840 [main] INFO  academy.TestListener - *** Test Suite validateAppNavBar ending ***
+14:32:07.885 [main] INFO  academy.TestListener - *** Test Suite validateUserRegister ending ***

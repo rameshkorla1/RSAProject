@@ -1,4 +1,4 @@
-package Academy;
+package academy;
 
 import java.io.IOException;
 
@@ -11,15 +11,18 @@ import org.testng.annotations.Test;
 
 import pageObjects.LandingPage;
 import resources.base;
+import static reportmanager.ExtentTestManager.reporterLog;
 
-@Listeners(Academy.TestListener.class)
+@Listeners(CustomerListeners.RSAListener.class)
 public class NavigateToLoginPage extends base {
 	 public static Logger log =LogManager.getLogger(base.class.getName());
 	 @BeforeTest
 	 public void initialize() throws IOException
 	 {	 	
-	 	 driver =initializeDriver();		
+	 	 driver =initializeDriver();
+	 	 reporterLog("Initialize the Driver:" +driver);
 	 	 driver.get(prop.getProperty("url"));
+	 	 reporterLog("Launching the URL:" +prop.getProperty("url"));
 	 }	 	
 	 @Test	 	
 	 public void validateAppNavBar() throws IOException
@@ -27,14 +30,18 @@ public class NavigateToLoginPage extends base {
 	      LandingPage l=new LandingPage(driver);
 	 	  if(l.getPopUpSize()>0)
 		  {
+	 		 reporterLog("Popup is displayed");
 				l.getPopUp().click();
+				reporterLog("Popup window is clicked");
 		  }
-		  l.getLogin().click(); 	 		
+		  l.getLogin().click(); 
+		  reporterLog("Click on the Login button");
 	 }	 	
 	 @AfterTest
 	 public void teardown()
 	 {	 		
 	 	 driver.close();
+	 	reporterLog("Driver is closed");
 	 	 driver=null;	 		
 	 }
 }

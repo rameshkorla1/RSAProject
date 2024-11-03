@@ -1,21 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30551" started-at="2022-04-21T06:28:57Z" finished-at="2022-04-21T06:29:27Z">
+  <suite started-at="2024-09-01T14:56:14 IST" name="Default suite" finished-at="2024-09-01T14:56:14 IST" duration-ms="479">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30551" started-at="2022-04-21T06:28:57Z" finished-at="2022-04-21T06:29:27Z">
-      <class name="Academy.RSASignUpTest">
-        <test-method status="PASS" signature="browserSetUp()[pri:0, instance:Academy.RSASignUpTest@34ce8af7]" name="browserSetUp" is-config="true" duration-ms="6124" started-at="2022-04-21T11:58:57Z" finished-at="2022-04-21T11:59:03Z">
+    <test started-at="2024-09-01T14:56:14 IST" name="Default test" finished-at="2024-09-01T14:56:14 IST" duration-ms="479">
+      <class name="RSAFunctionalTests.FooterLinksTest">
+        <test-method is-config="true" signature="BrowserSetUp()[pri:0, instance:RSAFunctionalTests.FooterLinksTest@388526fb]" started-at="2024-09-01T14:56:14 IST" name="BrowserSetUp" finished-at="2024-09-01T14:56:14 IST" duration-ms="53" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/bidi/HasBiDi]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/bidi/HasBiDi
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1022)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1022)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+at resources.base.init_DriverSetUp(base.java:88)
+at RSAFunctionalTests.FooterLinksTest.BrowserSetUp(FooterLinksTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.bidi.HasBiDi
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+... 44 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserSetUp -->
-        <test-method status="PASS" signature="validateUserRegister()[pri:0, instance:Academy.RSASignUpTest@34ce8af7]" name="validateUserRegister" duration-ms="24416" started-at="2022-04-21T11:59:03Z" finished-at="2022-04-21T11:59:27Z">
+        </test-method> <!-- BrowserSetUp -->
+        <test-method signature="footerLinksvalidation()[pri:0, instance:RSAFunctionalTests.FooterLinksTest@388526fb]" started-at="2024-09-01T14:56:14 IST" name="footerLinksvalidation" finished-at="2024-09-01T14:56:14 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/bidi/HasBiDi]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/bidi/HasBiDi
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1022)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1022)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:800)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:698)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:621)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:579)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+at resources.base.init_DriverSetUp(base.java:88)
+at RSAFunctionalTests.FooterLinksTest.BrowserSetUp(FooterLinksTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.bidi.HasBiDi
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:527)
+... 44 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateUserRegister -->
-      </class> <!-- Academy.RSASignUpTest -->
+        </test-method> <!-- footerLinksvalidation -->
+      </class> <!-- RSAFunctionalTests.FooterLinksTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

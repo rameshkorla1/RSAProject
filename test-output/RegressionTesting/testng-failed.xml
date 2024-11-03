@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="RSAFunctionalTests.RSASignUpJson">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="validateUserRegister"/>
+          <include name="browserSetUp"/>
+        </methods>
+      </class> <!-- RSAFunctionalTests.RSASignUpJson -->
+      <class name="RSAFunctionalTests.FooterLinksTest">
+        <methods>
+          <include name="BrowserSetUp"/>
+          <include name="footerLinksvalidation"/>
+        </methods>
+      </class> <!-- RSAFunctionalTests.FooterLinksTest -->
+      <class name="RSAFunctionalTests.NavigateToLoginPage">
+        <methods>
+          <include name="validateAppNavBar"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- RSAFunctionalTests.NavigateToLoginPage -->
+      <class name="RSAFunctionalTests.RSASignUpTest">
+        <methods>
+          <include name="browserSetUp"/>
+          <include name="quitBrowser"/>
+          <include name="validateUserRegister"/>
+        </methods>
+      </class> <!-- RSAFunctionalTests.RSASignUpTest -->
+      <class name="RSAFunctionalTests.validateTitleTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="validateAppTitle"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- RSAFunctionalTests.validateTitleTest -->
+      <class name="RSAFunctionalTests.validateNavigationBar">
+        <methods>
+          <include name="validateAppNavBar"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- RSAFunctionalTests.validateNavigationBar -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [RegressionTesting] -->
